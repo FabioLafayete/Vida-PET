@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF7F24"
+    tools:context="net.ddns.vidapet.vidapet.TelaCadastro">
+
+
+    <ScrollView
+        android:id="@+id/sv_cadastro"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:src="@drawable/logo_pet"
+                android:contentDescription="@null" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+            <EditText
+                android:id="@+id/editNomeCadastroID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Nome"
+                android:textColor="@color/whiteColor"
+                android:inputType="text"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+            <EditText
+                android:id="@+id/editSobrenomeCadasrtroID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="Sobrenome"
+                android:inputType="text"
+                android:textColor="@color/whiteColor"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+            <EditText
+            android:id="@+id/editIdadeCadastroID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Idade"
+            android:inputType="number"
+                android:textColor="@color/whiteColor"
+            android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtCelular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:text="Celular:"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <EditText
+                android:id="@+id/edit55CadastroID"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                    android:textColor="@color/whiteColor"
+                android:gravity="center"
+                    android:nextFocusDown="@+id/edit11CadastroID"
+                android:hint="+55"/>
+
+            <EditText
+                android:id="@+id/edit11CadastroID"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/whiteColor"
+                android:hint="11"
+                android:gravity="center"
+                android:nextFocusDown="@+id/editTelefoneCadastroID"
+                />
+
+                <EditText
+                    android:id="@+id/editTelefoneCadastroID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:hint="99999 - 9999"
+                    android:textColor="@color/whiteColor"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/editCpfCadastroID"
+                    />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+            <EditText
+                android:id="@+id/editCpfCadastroID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="CPF (Opcional)"
+                android:inputType="number"
+                android:textColor="@color/whiteColor"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+            <EditText
+                android:id="@+id/editEmailCadastroID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="@string/emailTelaLogin"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/whiteColor"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+            <EditText
+                android:id="@+id/editSenhaCadastroID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:gravity=""
+                android:hint="@string/senhaTelaLogin"
+                android:inputType="textPassword"
+                android:textColor="@color/whiteColor"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+            <EditText
+                android:id="@+id/editConfirmarSenhaCadastroID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:gravity=""
+                android:hint="Confirme sua senha"
+                android:inputType="textPassword"
+                android:textColor="@color/whiteColor"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnCadastrarID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/btnCadastrar"
+                    android:theme="@style/botaoPadrao" />
+
+                <Button
+                    android:id="@+id/btnCancelarID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/btnCancelar"
+                    android:theme="@style/botaoPadrao" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@null"
+                android:src="@drawable/pegada_png" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

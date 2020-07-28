@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="net.ddns.vidapet.vidapet.AddPet">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/sv_pet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clique na imagem para adicionar uma foto do seu PET."
+            android:textSize="20sp"
+            android:gravity="center"
+            android:ems="15"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgPet"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/add_user"
+        android:layout_gravity="center"
+        />
+
+
+        <EditText
+            android:id="@+id/txtNomePetAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_outline"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/txtIdadePetAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_outline"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:ems="10"
+            android:hint="Idade"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:selectAllOnFocus="false" />
+
+        <EditText
+            android:id="@+id/txtRacaPetAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:hint="Raça"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:singleLine="true" />
+
+
+    <LinearLayout
+        android:id="@+id/lv_rb_macho_femea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/rg_machofemea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_macho"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Macho"
+            app:buttonTint="@color/colorPrimary"
+            android:textSize="18sp"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_femea"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Fêmea"
+            app:buttonTint="@color/colorPrimary"
+            android:textSize="18sp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:padding="20dp"
+            android:textAlignment="textStart"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            app:backgroundTint="@color/colorPrimary"
+            >
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            >
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_castradoAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:text="É castrado?"
+                app:buttonTint="@color/colorPrimary"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_amigavelAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text="É amigável?"
+                app:buttonTint="@color/colorPrimary"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_raivaAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text="Vacinado contra raiva?"
+                app:buttonTint="@color/colorPrimary"
+                />
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_v8v10Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text="Vacinado com V8 / V10?"
+                app:buttonTint="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/txtDescPetAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:textColor="#000"
+            android:gravity="center"
+            android:hint="Descrição do seu Pet"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnSalvarPetAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:text="Salvar"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

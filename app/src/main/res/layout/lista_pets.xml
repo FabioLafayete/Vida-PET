@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="10dp">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgPetListaPets"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/petimg7"
+        android:layout_margin="5dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtNomePetListaPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="NOME"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            />
+
+        <TextView
+            android:id="@+id/txtIdadePetListaPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_orange_light"
+            android:text="IDADE"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/txtSexoPetListaPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_orange_light"
+            android:text="Sexo"
+            android:paddingTop="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:textSize="15sp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

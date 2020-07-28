@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.ddns.vidapet.vidapet.ConversaActivity"
+    android:background="@drawable/bg">
+
+    <include
+        android:id="@+id/tb_Conversa"
+        layout="@layout/toolbar_conversa"/>
+
+    <ListView
+        android:id="@+id/lv_mensagens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_conversas"
+        android:layout_below="@+id/tb_Conversa"
+        android:padding="8dp"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_conversas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="true"
+        >
+
+        <EditText
+            android:id="@+id/edit_mensagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Mensagens"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"/>
+
+        <ImageButton
+            android:id="@+id/bt_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send"
+            android:theme="@style/botaoPadrao"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

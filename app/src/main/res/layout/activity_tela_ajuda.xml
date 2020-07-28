@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="net.ddns.vidapet.vidapet.TelaAjuda"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/splash_screen" />
+
+    <TextView
+        android:id="@+id/txtDuvida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tem alguma dúvida?"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtproblema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Encontrou algum problema?"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtServicos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre em contato conosco pelos serviços abaixo que iremos lhe ajudar!"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_FAQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        >
+    <ImageView
+        android:id="@+id/imgFaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_help_black_24dp"
+        />
+    <TextView
+        android:id="@+id/txtFaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Dúvidas frequentes"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        >
+
+    <ImageView
+        android:id="@+id/imgEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_email_black_24dp"
+        />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vidapetapp@gmail.com"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Politica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        >
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:tint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_info_black_24dp"
+        />
+
+    <TextView
+        android:id="@+id/txtPolitica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Políticas de privacidade"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/txtVersao"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Vida Pet 1.0"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

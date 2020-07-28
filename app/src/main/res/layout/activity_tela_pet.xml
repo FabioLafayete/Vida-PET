@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.ddns.vidapet.vidapet.TelaPet">
+
+    <include
+        android:id="@+id/tb_pet"
+        layout="@layout/toolbar"
+        />
+
+    <ScrollView
+        android:id="@+id/sv_pet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/petImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/petimg7"
+        android:background="@drawable/image_circular"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"
+        />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:id="@+id/txtNomePetTelaPet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:id="@+id/txtIdadePetTelaPet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idade"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/txtSexoPetTelaPet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            />
+            <TextView
+            android:id="@+id/txtRacaPetTelaPet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raça"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            />
+            <TextView
+                android:id="@+id/txtTamanhoPetTelaPet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tamanho"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_castrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="É castrado"
+        app:buttonTint="@color/colorPrimary"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_amigavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="É amigavel"
+        app:buttonTint="@color/colorPrimary"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_raiva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="É vacinado contra raiva"
+        app:buttonTint="@color/colorPrimary"
+        />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_v8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="Foi vacinado com V8 / V10"
+        app:buttonTint="@color/colorPrimary"
+        />
+
+    <LinearLayout
+        android:id="@+id/llInfoPet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:id="@+id/txtTitleDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mais sobre o PET:"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/txtDescricaoPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ihdaisdhajsdhasuidhaksjdhasdui asdhiaudh"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:inputType="textMultiLine"
+            />
+
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

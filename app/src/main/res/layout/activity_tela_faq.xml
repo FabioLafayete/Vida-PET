@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.ddns.vidapet.vidapet.TelaFAQ">
+
+    <include
+        android:id="@+id/tb_faq"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_politica"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/cabecalho" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView6"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txtFAQ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:text="@string/textoFAQ"
+            />
+    </ScrollView>
+
+
+
+
+</LinearLayout>

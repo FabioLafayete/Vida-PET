@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Vida Pet</string>
+    <string name="cadastrar_seTelaLogin">Cadastre-se</string>
+    <string name="emailTelaLogin">E-mail</string>
+    <string name="esqueceu_a_senhaTelaLogin">Esqueceu a senha?</string>
+    <string name="btnLogarTelaLogin">Logar</string>
+    <string name="senhaTelaLogin">Senha</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnCancelar">CANCELAR</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="btnCadastrar">CADASTRAR</string>
+    <string name="item_configuracoes">Configurações</string>
+    <string name="item_sair">Sair</string>
+    <string name="title_activity_home_page">Vida Pet</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+
+    <string name="textoPoliticaPrivacidade">
+        <![CDATA[
+    <p><strong>POLÍTICA DE PRIVACIDADE</strong></p>
+        <p> VIDA PET, LTDA. </p>
+        <p>POLÍTICA DE PRIVACIDADE</p>
+<p>O Vida Pet respeita sua privacidade. Porque nós reunimos informações importantes de nossos usuários, visitantes, assinantes e clientes (coletivamente, "você" ou "seu"), nós estabelecemos esta Política de Privacidade, como forma de comunicar nossas práticas de coleta de informações. Ao acessar ou utilizar Vida Pet.com.br (o "Site") ou qualquer um dos nossos aplicativos e serviços móveis (o site, e essas aplicações e serviços, coletivamente, "Serviços"), você reconhece e concorda com esta Política de Privacidade e também concorda com os Termos de Serviço localizados em www.vidapet.com.br/termos. Podemos compartilhar informações com ou entre os nossos afiliados ou sites que possuímos ou controlamos, mas sempre respeitando os termos desta Política de Privacidade.</p>
+<p>Nossos objetivos principais na coleta de informações são fornecer e melhorar os nossos Serviços, e permitir que usuários desfrutem dos Serviços. Quando você cria uma conta, vamos gerar um perfil na Vida Pet para você. O perfil geralmente contém o seu primeiro nome, inicial do sobrenome, e dados sobre os animais, e pode incluir outros conteúdos ou informações que você fornece para fins de seu perfil. Esses perfis serão disponibilizados ao público em todo o Site. O Vida Pet não se responsabilizará por ações que demonstrem maus tratos, preconceito, discriminação, ou qualquer ato de má fé que algum usuário pode realizar com outro semelhante, e para com os animais. O Vida Pet se reserva o direito de negar ou remover qualquer usuário que verdadeiramente tenha o feito, desde que seja notificado com provas. Acusações infundadas, ou seja, determinado como em conflito com a missão ou as políticas do Vida Pet.</p>
+<p><strong>Alterações de nossa Política de Privacidade</strong></p>
+<p>Podemos revisar esta Política de Privacidade eventualmente conforme a inclusão de novos recursos ou conforme haja alteração de leis que possam afetar nossos serviços. Quando fizermos alterações em nossa política de privacidade, elas serão incluídas nesta página. Qualquer Política de Privacidade revisada se aplica tanto às informações que já temos sobre você no momento da alteração, e qualquer informação pessoal gerada ou recebida após a entrada em vigor da alteração. Recomendamos que leia periodicamente esta Política de Privacidade, para ver se houve alguma alteração na política que possa afetá-lo.</p>
+<p>A versão mais recente desta política é de 20 de abril de 2017.</p>
+            ]]>
+    </string>
+
+    <string name="textoFAQ">
+        <![CDATA[
+        <p><strong>1 - O que é o Vida Pet? Por que devo usar o serviço?</strong></p>
+<p>O Vida Pet trabalha de um jeito diferente dos hotéis comuns de cães, pois promovemos a hospedagem domiciliar. Você encontra um Anfitrião próximo a você perfeito para as necessidades do seu animal e ele cuidará do seu cãozinho com todo o amor e carinho enquanto você estiver fora, seguindo as suas recomendações e a rotina com a qual seu cãozinho já está acostumado.
+Ou seja, o Vida Pet oferece uma opção mais carinhosa e mais simples que os hotéis convencionais de animais!</p>
+<p><strong>2 – Como funciona o serviço?</strong></p>
+<p>No Vida Pet você encontra Anfitriões que podem cuidar do seu pet. Todos eles tem algo em comum: são completamente apaixonados pelo que fazem. Para encontrar um Anfitrião, é só olhar as publicações e informações postadas para entrar em contato através da “Mensagens”. Você entra em contato com Anfitriões e acerta todos os detalhes para ficar com seu pet.
+Lembrando também que temos uma Garantia Veterinária caso seu cãozinho tenha uma necessidade durante a hospedagem, e todo o suporte que o Anfitrião precisar 24hrs.</p>
+<p><strong>3 - Como entro em contato com um Anfitrião?</strong></p>
+<p>Para se comunicar com um Anfitrião Vida Pet, basta encontrar sua publicação acessar o menu de mensagens e adicionar como um novo contato. Nesse espaço você pode enviar uma mensagem diretamente ao Anfitrião desejado e solicitar as informações que desejar: escrever a mensagem falando sobre seu cãozinho, os hábitos e personalidade dele e se o Anfitrião teria a disponibilidade necessária.</p>
+<p><strong>4 - Como eu vejo o telefone e endereço do Anfitrião?</strong></p>
+<p>Você pode acessar o perfil ou entrar em contato com ele através das mensagens e solicitar mais informações.</p>
+<p><strong>5 - Posso conhecer o Anfitrião antes da hospedagem?</strong></p>
+<p>Pode sim, sempre recomendamos que o pré-encontro aconteça. Desse modo, tanto você quanto o Anfitrião podem se conhecer, tirar todas as dúvidas que vocês têm e verificar se os animais de vocês se dão bem (caso o Anfitrião tenha um). Isso garante a segurança e o sucesso da hospedagem.
+Entretanto, há alguns Anfitriões que preferem se encontrar com os clientes em um local público antes de levá-lo a sua casa, por questões de segurança. Isso também ajuda que o seu cão e o do Anfitrião se conheçam em um ambiente neutro onde nenhum dos dois apresenta territorialidade, evitando uma eventual briga por esse motivo.</p>
+<p><strong>6 - O que faço se os Anfitriões com quem falei não me responderem?</strong></p>
+<p>Se você verificar e realmente não houver respostas, você pode tentar mandar mais uma, ou então entrar com contato com a gente através do email vidapetapp@gmail.com para que possamos tentar falar com o Anfitrião e pedir que ele te responda o quanto antes.</p>
+<p><strong>7 - Esse serviço é seguro?</strong></p>
+<p>Como exposto na política de privacidade, não nos responsabilizamos por qualquer ação imprudente de um usuário. Para mais detalhes, acessa a área “Politicas de privacidade”.</p>
+<p><strong>8 - Quanto custa para fazer a hospedagem do meu cão?</strong></p>
+<p>Os valores devem ser combinados com o próprio anfitrião.</p>
+<p><strong>9 - Posso hospedar mais de um Pet por vez?</strong></p>
+<p>Pode hospedar quantos pets tiver! Só não se esqueça de cadastrar cada um individualmente na área de "Meus Pets". Se algum pet não estiver cadastrado.</p>
+<p><strong>10 - Posso hospedar um animal que não seja um cão?</strong></p>
+<p>Orientamos a cadastrar apenas animais domésticos, porém, pode ser combinado com o anfitrião.</p>
+]]>
+    </string>
+
+    <string-array name="tamanho_pet">
+
+        <item>Pequenino (menos que 5kg)</item>
+        <item>Pequeno (5kg à 10kg)</item>
+        <item>Médio (10kg à 20kg)</item>
+        <item>Grande (20kg à 40kg)</item>
+        <item>Grandalhão (mais que 40kg)</item>
+
+    </string-array>
+
+
+</resources>

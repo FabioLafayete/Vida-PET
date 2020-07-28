@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_listarPet"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.ddns.vidapet.vidapet.ListarPets">
+
+    <include
+        android:id="@+id/tb_pets"
+        layout="@layout/toolbar" />
+
+    <net.ddns.vidapet.helper.SlidingTabLayout
+        android:id="@+id/stl_listaPets"
+        android:background="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_listaPets"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        />
+
+
+</LinearLayout>

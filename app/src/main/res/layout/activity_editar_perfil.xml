@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="net.ddns.vidapet.vidapet.EditarPerfil">
+
+    <include
+        android:id="@+id/tb_userPerfil"
+        layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:id="@+id/sv_cadastro"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_editPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="Clique na imagem para selecionar outra foto de perfil."
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUserEdit"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/add_user" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel2"
+                android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/editNomePerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="text"
+            android:textColor="#000"
+            android:textColorHint="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel2"
+                >
+            <EditText
+                android:id="@+id/editSobrenomePerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="Sobrenome"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel2"
+                >
+            <EditText
+                android:id="@+id/editIdadePerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="Idade"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtCelular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:text="Celular:"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/edit55PerfilID"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:hint="+55"
+                    android:textColor="#000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColorLink="@color/colorPrimary"
+                    />
+
+                <EditText
+                    android:id="@+id/edit11PerfilID"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="11"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColorLink="@color/colorPrimary"
+
+                    />
+
+                <EditText
+                    android:id="@+id/editTelefonePerfilID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="#000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColorLink="@color/colorPrimary"
+                    />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel2"
+                >
+            <EditText
+                android:id="@+id/editRuaPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="Rua"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel2"
+                >
+            <EditText
+                android:id="@+id/editNumRuaPerfil"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nº"
+                android:layout_marginRight="5dp"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel2"
+                >
+            <EditText
+                android:id="@+id/editBairroRuaPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Bairro"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary"
+                />
+            </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel2"
+                >
+            <EditText
+                android:id="@+id/editCepPerfil"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="CEP"
+                android:layout_marginRight="5dp"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel2"
+                >
+            <EditText
+                android:id="@+id/editCidadeRuaPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Cidade"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel2"
+                >
+            <EditText
+                android:id="@+id/editCpfPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="CPF"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary" />
+            </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnSalvarPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="SALVAR"
+            android:theme="@style/botaoPadrao" />
+
+        <Button
+            android:id="@+id/btnCancelarPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="@string/btnCancelar"
+            android:theme="@style/botaoPadrao" />
+    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
